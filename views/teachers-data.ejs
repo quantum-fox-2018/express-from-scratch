@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Teachers Data</title>
+  </head>
+  <body>
+    <h2>Teachers Data: </h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <% teachers.forEach(teacher => { %>
+        <tr>
+          <th> <%= teacher.name%> </th>
+        0  <th> <%= teacher.age%> </th>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
