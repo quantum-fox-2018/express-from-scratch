@@ -1,0 +1,26 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ./partials/header %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>School Apps!</h1>
+        <p>Hello <%=data.first_name%> <%=data.last_name%></p>
+    </div>
+</main>
+
+<footer>
+    <% include ./partials/footer %>
+</footer>
+
+</body>
+</html>
