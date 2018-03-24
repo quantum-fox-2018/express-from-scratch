@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View Teachers</title>
+  </head>
+  <body>
+    <%- include ../partials/menu.ejs %>
+    <h1>Teachers List</h1>
+    <table border='1'>
+        <tr>
+          <td><center>Id.</center></td>
+          <td><center>Name</center></td>
+          <td><center>Gender</center></td>
+          <td><center>Birthday</center></td>
+          <td><center>Email</center></td>
+          <td><center>Phone</center></td>
+        </tr>
+      <% let i=1 %>
+      <% data.forEach(data =>{ %>
+        <tr>
+          <td><%= i++ %></td>
+          <td><%= data.first_name %></td>
+          <td><%= data.gender %></td>
+          <td><%= data.birthday %></td>
+          <td><%= data.email %></td>
+          <td><%= data.phone %></td>
+        </tr>
+
+      <% })%>
+    </table>
+
+    <a href="/">Back</a>
+  </body>
+</html>
