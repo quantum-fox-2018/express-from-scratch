@@ -1,0 +1,27 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/menu.ejs') %>
+<div class="container">
+    <h2>Form Students</h2>
+    <form action="/students" method="post">
+        <p>
+            <label> Nama Siswa : <br>
+                <input type="text" name="name" >
+            </label>
+        </p>
+        <p>
+            <label> Email : <br>
+                <input type="date" name="date">
+            </label>
+        </p>
+        <p>
+            <label> Gender : <br>
+                <select name="gender">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <button type="submit">Simpan</button>
+        </p>
+    </form>
