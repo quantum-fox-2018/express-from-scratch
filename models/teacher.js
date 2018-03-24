@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Teacher = sequelize.define('Teacher', {
     first_name: DataTypes.STRING,
@@ -11,5 +10,12 @@ module.exports = (sequelize, DataTypes) => {
   Teacher.associate = function(models) {
     // associations can be defined here
   };
+  Teacher.prototype.getFullName = function () {
+    return this.first_name+' '+this.last_name
+  }
+
+  Teacher.prototype.getAge = function () {
+    return new Date().getFullYear()-this.birthday.substring(0,4)+' YO'
+  }
   return Teacher;
 };

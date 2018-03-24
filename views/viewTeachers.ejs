@@ -12,7 +12,7 @@
           <td><center>Id.</center></td>
           <td><center>Name</center></td>
           <td><center>Gender</center></td>
-          <td><center>Birthday</center></td>
+          <td><center>Age</center></td>
           <td><center>Email</center></td>
           <td><center>Phone</center></td>
         </tr>
@@ -20,9 +20,9 @@
       <% data.forEach(data =>{ %>
         <tr>
           <td><%= i++ %></td>
-          <td><%= data.first_name %></td>
+          <td><%= data.getFullName() %></td>
           <td><%= data.gender %></td>
-          <td><%= data.birthday %></td>
+          <td><%= data.getAge() %></td>
           <td><%= data.email %></td>
           <td><%= data.phone %></td>
         </tr>
