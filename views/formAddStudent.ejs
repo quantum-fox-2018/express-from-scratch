@@ -1,0 +1,41 @@
+<body>
+  <%- include ../partials/menu.ejs %>
+    <h1>Add</h1>
+    <p style ="color:red"><%= data_error.error %></p>
+    <form name="form" method="POST" action="/students/add">
+    <table>
+        <tr>
+        <td>First Name</td>
+        <td><input type="text" name="first_name" required></td>
+        </tr>
+        <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="last_name" required></td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td><input type="text" name="gender" required></td>
+        </tr>
+        <tr>
+        <td>Birthday</td>
+        <td><input type="text" name="birthday" required></td>
+        </tr>
+        <tr>
+        <td>Email</td>
+        <td><input type="text" name="email" required></td>
+        </tr>
+        <tr>
+        <td>Phone</td>
+        <td><input type="text" name="phone" required></td>
+        </tr>
+        <tr>
+        <td>Height</td>
+        <td><input type="text" name="height" required></td>
+        </tr>
+        <tr>
+
+        <td><input type="submit" value="Save" ></td>
+        </tr>
+    </table>
+    </form>
+</body>
