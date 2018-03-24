@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <h1> Teacher's Data</h2>
+    <table border="1" width="50%">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>subject</th>
+      </tr>
+          <% for(var i = 0; i < teacher.length; i++) { %>
+            <tr>
+            <th><%= teacher[i].name %></th>
+            <th><%= teacher[i].age %></th>
+            <th><%= teacher[i].subject %></th>
+          </tr>
+          <% } %>
+
+    </table>
+    <p><a href="/school">Back</a>
+  </body>
+</html>
