@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Teachers Data</title>
+  </head>
+  <body>
+    <h1>Teachers Data</h1>
+    <table border="1">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+      <% teachers.forEach(teacher => { %>
+        <tr>
+          <td><%= teacher.firstname %></td>
+          <td><%= teacher.lastname %></td>
+          <td><%= teacher.age %></td>
+          <td><%= teacher.email %></td>
+        </tr>
+      <% }) %>
+      </tr>
+    </table>
+  </body>
+</html>

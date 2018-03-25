@@ -3,6 +3,16 @@
     <title><%= title %></title>
   </head>
   <body>
-    <h1>Tes student form</h1>
+    <h1>Tes Student Form</h1>
+    <form action="/student" method="post">
+      First name:<br>
+      <input type="text" name="firstname" value=""><br>
+      Last name:<br>
+      <input type="text" name="lastname" value=""><br>
+      Email:<br>
+      <input type="email" name="email" value=""><br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
