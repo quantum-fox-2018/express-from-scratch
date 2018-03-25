@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Teacher List</title>
+  </head>
+  <body>
+    <h2><TeacherList: </h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+      </tr>
+
+      <% for(let i=0; i<teacherList.length; i++) { %>
+        <tr>
+          <td><p><%= teacherList[i].name %></p></td>
+          <td><p><%= teacherList[i].subject %></p></td>
+        </tr>
+     <% } %>
+    </table>
+  </body>
+</html>
