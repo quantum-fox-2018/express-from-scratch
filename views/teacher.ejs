@@ -1,0 +1,33 @@
+<html>
+<head>
+     <title>Suzuran Teachers</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<h3 align="center">Suzuran Teachers</h3>
+<table style="width:40%" align="center">
+  <tr>
+    <th>No.</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Gender</th>
+    <th>Academic subject</th>
+  </tr>
+  <% for(let i =0; i < dataTeachers.length; i++){ %>
+    <tr>
+      <td align="center"><%- dataTeachers[i].No %></td>
+      <td><%- dataTeachers[i].first_name %></td>
+      <td><%- dataTeachers[i].last_name %></td>
+      <td><%- dataTeachers[i].gender %></td>
+      <td><%- dataTeachers[i].academic_subject %></td>
+    </tr>
+  <% } %>
+</table>
+
+</body>
+</html>
