@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Student Form</title>
+</head>
+
+<body>
+  <form action="/student" method="post">
+    <center>
+      <hr>
+      <h1>Form Registration</h1>
+      <hr>
+      <br>
+      <div>
+        <label>Name:</label>
+        <input type='text' name='name' class='textInputName'>
+      </div>
+      <br>
+      <div>
+        <label>Birthday date:</label>
+        <label>Date</label>
+        <input type='number' name='date' min='1' max='31' class='textInputDate'>
+        <label>Month</label>
+        <input type='number' name='month' min='1' max='12' class='textInputMonth'>
+        <label>Year</label>
+        <input type='number' name='year' min='1900' max='2100' class='textInputYear'>
+      </div>
+      <br>
+      <div>
+        <label>Gender:</label>
+        <input type='radio' name='gender' value='male'><span>
+        <label for='male_radio'>Male</label>
+        <input type='radio' name='gender' value='female'><span>
+        <label for='female_radio'>Female</label>
+      <br>
+      <div>
+        <br>
+        <input type="submit">
+      </div>
+    </center>
+  </form>
+</body>
+
+
+
+
+
+</html>
