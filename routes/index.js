@@ -3,7 +3,7 @@ const students  = require('./students');
 const teachers  = require('./teachers');
 
 routes.get('/', (req, res) => {
-  res.send('I love Hacktiv8!')
+  res.render('index');
 });
 
 routes.use('/students', students);
