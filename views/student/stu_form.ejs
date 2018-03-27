@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <font face="arial">
+        <head>
+            <title>Student Form</title>
+        </head>
+
+        <body>
+            <%- include ../partials/header %>
+            <center>
+                <!-- <h1>SMA DESA HUTAN</h1> -->
+                <h2><%= title %></h2>
+                <h4><a href="/students" style="color:dodgerblue;font-weight:bold;text-decoration:none">show all data</a></h4>
+            </center>
+            <form method="POST">
+                <!-- <table>
+                    <tr>
+                        <td>First name</td>
+                        <td>:</td>
+                        <td><input type="text" name="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td>:</td>
+                        <td><input type="text" name="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                </table> -->
+                
+                <b>First Name:</b><br>
+                <tr><input type="text" name="first_name" style="height:20px;width:100%;border-radius: 5px;"></tr><br><br>
+                <b>Last Name:</b><br>
+                <input type="text" name="last_name" style="height:20px;width:100%;border-radius: 5px;"><br><br>
+                <b>Email:</b><br>
+                <input type="email" name="email" style="height:20px;width:100%;border-radius: 5px;"><br><br>
+                <br>
+                <input type="submit" value="Add Student" style="border-radius: 5px;background-color:DodgerBlue;color:white;border-color:dodgerblue">
+            
+            </form>
+        </body>
+    </font>
+
+</html>

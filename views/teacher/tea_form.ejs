@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <font face="arial">
+        <head>
+            <title>Teacher Form</title>
+        </head>
+
+        <body>
+            <%- include ../partials/header %>
+            <center>
+                <!-- <h1>SMA DESA HUTAN</h1> -->
+                <h2><%= title %></h2>
+                <h4><a href="/teachers" style="color:dodgerblue;font-weight:bold;text-decoration:none">show all data</a></h4>
+            </center>
+            <a style="color:red;"><b><i><%= error %></i></b></a><br><br>
+            <form method="POST">
+                <b>First Name:</b><br>
+                <tr><input type="text" name="first_name" style="height:20px;width:100%;border-radius: 5px;"></tr><br><br>
+                <b>Last Name:</b><br>
+                <input type="text" name="last_name" style="height:20px;width:100%;border-radius: 5px;"><br><br>
+                <b>Email:</b><br>
+                <input type="text" name="email" style="height:20px;width:100%;border-radius: 5px;"><br><br>
+                <b>Subject:</b><br>
+                <select name="SubjectId">
+                    <option value="1">Kimia</option>
+                    <option value="2">Biologi</option>
+                    <option value="3">Fisika</option>
+                    <option value="4">Matematika</option>
+                    <option value="5">Sosiologi</option>
+                    <option value="6">Olahraga</option>
+                    <option value="7">Komputer</option>
+                    <option value="8">Fisika</option>
+                    <option value="9">Sastra</option>
+                    <option value="10">Sejarah</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Add Teacher" style="border-radius: 5px;background-color:DodgerBlue;color:white;border-color:dodgerblue">
+            
+            </form>
+        </body>
+    </font>
+
+</html>

@@ -7,6 +7,7 @@ routes.get('/', function(req,res) {
 
 routes.use('/students', require('./students.js'))
 routes.use('/teachers', require('./teachers.js'))
+routes.use('/subjects', require('./subjects.js'))
 
 
 module.exports = routes

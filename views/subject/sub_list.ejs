@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <font face="arial">
+        <head>
+            <title>WEBSITE SMA DH</title>
+        </head>
+        
+        <body>
+            <header>
+            <!-- <h1><%= title %></h1> -->
+            <%- include ../partials/header %><br>
+            </header>
+            
+            <a href="/subjects/add" style="text-decoration:none;color:dodgerblue;font-weight:bold">Add Subject</a>
+            <br><br>
+            <table style="width:100%">
+                <tr align="left">
+                    <th >No</th>
+                    <th>Subject Name</th>
+                    <th>Teachers</th>
+                    <th>Action</th>
+                    
+                </tr>
+                
+                <% for (let i = 0; i < arrSubjects.length; i++) { %>
+                    <tr align="left">
+                        <td><%= arrSubjects[i].id %></td>
+                        <td><%= arrSubjects[i].subject_name %></td>
+                        <!-- <td></td> -->
+                        
+                        <% if(arrSubjects[i].Teachers == '') { %>
+                            <td><%= 'unassigned' %></td>
+                        <% } else { %>
+                            <td style="text-align:left">
+                                <% for (let j = 0; j < arrSubjects[i].Teachers.length; j++) { %>
+                                    <ul>
+                                        <li><%= arrSubjects[i].Teachers[j].first_name + " " + arrSubjects[i].Teachers[j].last_name %></li>
+                                    </ul>
+                                <% } %>
+                            </td>
+                        <% } %>
+                        
+
+                        <td><a href="/subjects/edit/<%= arrSubjects[i].id %>" style="text-decoration:none;color:dodgerblue;font-weight:bold">Edit</a> | <a href="/subjects/delete/<%= arrSubjects[i].id %>" onclick="return confirm('Delete this teacher?')" style="text-decoration:none;color:dodgerblue;font-weight:bold">Delete</a></td>
+                    </tr>
+                    <% } %>
+            </table>
+        </body>
+    </font>
+</html>
