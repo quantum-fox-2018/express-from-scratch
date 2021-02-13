@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <font face="arial">
+        <head>
+            <title>WEBSITE SMA DH</title>
+        </head>
+        
+        <body>
+            <header>
+            <!-- <h1><%= title %></h1> -->
+            <%- include ../partials/header %><br>
+            </header>
+            
+            <a href="/teachers/add" style="text-decoration:none;color:dodgerblue;font-weight:bold">Add Teacher</a>
+            <br><br>
+            <table style="width:100%">
+                <tr align="left">
+                    <th >NIG</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Action</th>
+                    
+                </tr>
+                
+                <% for (let i = 0; i < arrTeachers.length; i++) { %>
+                    <tr align="left">
+                        <td><%= arrTeachers[i].id %></td>
+                        <td><%= arrTeachers[i].first_name %></td>
+                        <td><%= arrTeachers[i].last_name %></td>
+                        <td><%= arrTeachers[i].email %></td>
+                        
+                        <% if(TeacherHelper.getSubject(arrTeachers[i].SubjectId) == 'unassigned') { %>
+                                <td><i><%= TeacherHelper.getSubject(arrTeachers[i].SubjectId) %></i></td>
+                            <% } else { %>
+                                <td><%= TeacherHelper.getSubject(arrTeachers[i].Subject.subject_name) %></td>
+                        <% } %>
+
+                        <td><a href="/teachers/edit/<%= arrTeachers[i].id %>" style="text-decoration:none;color:dodgerblue;font-weight:bold">Edit</a> | <a href="/teachers/delete/<%= arrTeachers[i].id %>" onclick="return confirm('Delete this teacher?')" style="text-decoration:none;color:dodgerblue;font-weight:bold">Delete</a></td>
+                    </tr>
+                    <% } %>
+            </table>
+        </body>
+    </font>
+</html>

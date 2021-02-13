@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <font face="arial">
+        <head>
+            <title>Subject Form</title>
+        </head>
+
+        <body>
+            <%- include ../partials/header %>
+            <center>
+                <!-- <h1>SMA DESA HUTAN</h1> -->
+                <h2><%= title %></h2>
+                <h4><a href="/subjects" style="color:dodgerblue;font-weight:bold;text-decoration:none">show all data</a></h4>
+            </center>
+            <form method="POST">
+                <b>Subject Name:</b><br>
+                <tr><input type="text" name="subject_name" style="height:20px;width:100%;border-radius: 5px;"></tr><br><br>
+                <br>
+                <br>
+                <input type="submit" value="Add Subject" style="border-radius: 5px;background-color:DodgerBlue;color:white;border-color:dodgerblue">
+            
+            </form>
+        </body>
+    </font>
+
+</html>
