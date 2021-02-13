@@ -1,0 +1,18 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "age": 51,
+    "email": "johndoe@gmail.com"
+  },{
+    "firstname": "Artour",
+    "lastname": "Babaev",
+    "age": 21,
+    "email": "artour322@gmail.com"
+  },{
+    "firstname": "Clinton",
+    "lastname": "Loomis",
+    "age": 27,
+    "email": "clintonfear1@gmail.com"
+  }
+]
